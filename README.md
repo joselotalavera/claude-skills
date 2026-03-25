@@ -1,32 +1,26 @@
 # claude-skills
 
-A collection of Claude Code skills.
+A collection of Claude Code skills by [@joselotalavera](https://github.com/joselotalavera).
 
-## Installation
+## Usage
+
+Install the plugin directly in Claude Code — no cloning needed:
 
 ```
-/plugin install claude-skills@<your-github-username>
+/plugin install joselotalavera/claude-skills
 ```
+
+That's it. The skills will be available immediately in your Claude Code session.
 
 ## Skills
 
 | Skill | Description |
 |-------|-------------|
-| *(add your skills here)* | |
+| [create-pr](skills/create-pr/SKILL.md) | Creates a GitHub PR with structured description, updates CHANGELOG.md, bumps version if needed, and commits before opening the PR |
 
-## Structure
+## Contributing
 
-```
-claude-skills/
-├── .claude-plugin/
-│   └── plugin.json       # Plugin metadata
-├── skills/
-│   └── <skill-name>/
-│       └── SKILL.md      # Skill definition
-└── README.md
-```
-
-## Adding a Skill
+To add a new skill:
 
 1. Create a new directory under `skills/`
 2. Add a `SKILL.md` file with this frontmatter:
@@ -35,14 +29,9 @@ claude-skills/
 ---
 name: your-skill-name
 description: Describe when Claude should use this skill
-version: 1.0.0
 ---
 
-# Your Skill
-
-Skill content here...
+Skill instructions here...
 ```
 
-## License
-
-MIT
+3. List it in the Skills table above
